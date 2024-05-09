@@ -1,4 +1,4 @@
-import { AppShell, Burger, Group, Skeleton, Text } from '@mantine/core'
+import { AppShell, Burger, Group } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import Navbar from '@components/ui/Navbar'
 export default function BaseLayout() {
