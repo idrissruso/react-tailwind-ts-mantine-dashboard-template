@@ -1,12 +1,13 @@
-import { Button, Tooltip } from '@mantine/core'
-import './App.css'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import BaseLayout from '@layout/AppShell'
 export default function App() {
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <Tooltip label="Tooltip">
-        <Button>mantine</Button>
-      </Tooltip>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<BaseLayout />}></Route>
+
+        <Route path="*" element={<div>Not Found</div>} />
+      </Routes>
+    </BrowserRouter>
   )
 }

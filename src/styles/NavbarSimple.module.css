@@ -1,0 +1,52 @@
+.navbar {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbarMain {
+  flex: 1;
+}
+
+.header {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.footer {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid gray;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  color: gray;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.link:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+.link[data-active],
+.link[data-active]:hover {
+  background-color: blue;
+  color: white;
+}
+
+.linkIcon {
+  color: darkgray;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
